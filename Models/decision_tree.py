@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.neighbors import KNeighborsClassifier
 
 # Path to training data
 train_path = '../Data/train.csv'
@@ -43,3 +44,4 @@ model.fit(train_X, train_y)
 val_predictions = model.predict(val_X)
 val_mae = mean_absolute_error(val_predictions, val_y)
 print("Validation MAE for Random Forest Model: {:,.0f}".format(val_mae))
+
