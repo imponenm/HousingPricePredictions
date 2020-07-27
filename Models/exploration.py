@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 
 
 df_train = pd.read_csv('..//Data/train.csv')
-
 print(df_train.columns)
 
 print(df_train['SalePrice'].describe())
